@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="manifest" href="manifest.json">
+    <!-- Add icons for various platforms -->
+    <link rel="apple-touch-icon" href="me.jpeg">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/me.jpeg">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/me.jpeg">
+    <style>
+         /* Add your CSS styles here */
+ .info-container {
+    display: flex;
+    flex-direction: row; /* Default direction */
+    align-items: center;
+    padding: 20px;
+    background-image: url('img/back.jpg'); /* Path to your background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+.info-container img {
+    width: 10vw; /* Responsive width, adjust minimum and maximum as necessary */
+    max-width: 150px; /* Maximum size */
+    min-width: 100px; /* Minimum size */
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px; /* Adds some space between the image and the text */
+}
+
+.info-text {
+    font-size: calc(10px + 1vw); /* Responsive font size */
+    max-width: 80%; /* Prevents the text from becoming too wide on large screens */
+}
+
+/* Adjust layout for smaller screens */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center-align the text for a better look on small screens */
+    }
+
+    .info-container img {
+        margin-right: 0; /* Remove the right margin */
+        margin-bottom: 20px; /* Add some space below the image */
+    }
+
+    .info-text {
+        font-size: calc(12px + 2vw); /* Slightly larger font size for better readability on small screens */
+    }
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>My Website Portfolio</h1>
+    </header>
+    <div class="info-container">
+        <img src="img/me.jpg" alt="Your Name">
+        <div class="info-text">
+            <h2>Bandi Preetham Reddy</h2>
+            
+        </div>
+    </div>
+    
+    <main>
+       
+        <section class="website" id="site1">
+            <a href="site1.html">
+                <img src="img/site1.jpg" alt="Screenshot of Website 1">
+                <div>
+                    <h2>Attendance tracker</h2>
+                    <p>Attendance tracker for the kmit students (live attendance)</p>
+                </div>
+            </a>
+        </section>
+        <section class="website" id="site2">
+            <a href="site2.html">
+                <img src="img/site2.jpg" alt="Screenshot of Website 2">
+                <div>
+                    <h2>music App</h2>
+                    <p>listen to the music in my music app created using java script and html nd css</p>
+                </div>
+            </a>
+        </section>
+        <section class="website" id="site2">
+            <a href="site3.html">
+                <img src="img/site3.jpg" alt="Screenshot of Website 2">
+                <div>
+                    <h2>Info app</h2>
+                    <p>info app provides you info about the sstudents studying in kmit clg</p>
+                </div>
+            </a>
+        </section>
+        <section class="website" id="site2">
+            <a href="site4.html">
+                <img src="img/site4.jpg" alt="Screenshot of Website 2">
+                <div>
+                    <h2>resultss app</h2>
+                    <p>results app for all the kmit students</p>
+                </div>
+            </a>
+        </section>
+        <section class="website" id="site2">
+            <a href="site5.html">
+                <img src="img/site5.png" alt="Screenshot of Website 2">
+                <div>
+                    <h2>chat app</h2>
+                    <p>any number of users can enter into the room nd chat with each other :)</p>
+                </div>
+            </a>
+        </section>
+        <!-- Repeat for other websites -->
+    </main>
+   
+    <script src="script.js" defer></script>
+</body>
+</html>

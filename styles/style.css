@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+header {
+    background-color:#333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.website {
+    margin: 10px;
+    width: calc(25% - 20px); /* Smaller size for laptop view */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    background-color:lightgrey; /* Gives the card a distinct background */
+    border-radius: 5px; /* Optional: adds rounded corners to the card */
+    overflow: hidden; /* Ensures that content does not spill outside the border-radius */
+}
+
+.website:hover {
+    transform: translateY(-5px);
+}
+
+.website img {
+    width: 100%; /* Makes the image cover the card width */
+    height: 300px; /* Smaller fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the area nicely */
+}
+
+.website div {
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    .website {
+        width: calc(50% - 20px); /* Larger than phone, smaller than initial */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .website {
+        width: calc(100% - 20px); /* Full width on smaller screens, with slight margin */
+        margin: 10px 0; /* Adjust margin for vertical spacing */
+    }
+    .website img {
+        height: 200px; /* Further decrease for smaller screens */
+    }
+}
+
+
+

@@ -1,0 +1,84 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e6e9f0 0%, #eef1f5 100%);
+    color: #333;
+}
+
+header {
+    background-color: #607d8b; /* Softer grey-blue for a more elegant look */
+    color:black;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds depth */
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 20px 0;
+    background: black;
+    color: #e6e9f0;
+     /* Bright white to contrast with the background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    width: 80%;
+    max-width: 960px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+section img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 8px; /* Rounded corner for the image */
+    border-bottom-left-radius: 8px; /* Consistent with section's border-radius */
+}
+
+.website-info {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.website-info h2 {
+    color: #607d8b; /* Matching the header */
+}
+
+.btn {
+    display: inline-block;
+    background-color: #556270; /* Darker, muted tone for contrast */
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #455a64; /* Darken on hover for interaction feedback */
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    section img {
+        width: 100%; /* Full width on smaller screens */
+        border-top-right-radius: 8px; /* Adjusted for the changed layout */
+        border-bottom-left-radius: 0;
+    }
+
+    .website-info {
+        max-width: none;
+    }
+}
